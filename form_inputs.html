@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form inputs</title>
+</head>
+<body>
+    <form action="mailto:anchoringthemoon@gmail.com" method="post" enctype="text/plain">
+        <table cellspacing="10">
+            <tr>            
+                <td><label for="">Name:</label></td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>            
+                <td><label for="">Your email ID:</label></td>
+                <td><input type="email" name="useremail"></td>
+            </tr>
+            <tr>
+                <td><label for="">Date of Birth:</label></td>
+                <td><input type="date" name="userdob"></td>
+            </tr>
+            <tr>            
+            <td><label for="">Gender:</label></td>
+                <td>
+                    <input type="radio" name="usergender" id="male"> 
+                    <!--Name attribute allows you to define a radio group. 
+                        If you don't define a name attribute multiple selections 
+                        will be allowed in a radio button group -->
+                    <label for="male">Male</label>
+                    <input type="radio" name="usergender" id="female" checked>
+                    <!-- to keep one of the radio buttons checked by default-->
+                    <label for="female">Female</label>
+                </td>       
+            </tr>
+            <tr>           
+                <td><label for="">Choose your most beautiful photo:</label></td>
+                <td><input type="file" name="userfile"></td>
+            </tr>
+            <tr>           
+                <td><label for="">Choose your favorite colour:</label></td>
+                <td><input type="color" name="usercolor"></td>           
+            </tr>
+            <tr>           
+                <td><label for="">Enter a password:</label></td>
+                <td><input type="password" name="userpwd"></td>           
+            </tr>
+            <tr>           
+                <td><label for="">Are you sure you want to submit?</label></td>
+                <td><input type="checkbox" name="userconsent"></td>           
+            </tr>
+            <tr>           
+                <td><label for="">In a range of 1 to 5, How much did you like my webpage?</label></td>
+                <td><input type="range" min="1" max="5" list="numbers" name="userliking"></td>
+                <datalist id="numbers">
+                    <option value="1" label="One"></option>
+                    <option value="2" label="Two"></option>
+                    <option value="3" label="Three"></option>
+                    <option value="4" label="Four"></option>
+                    <option value="5" label="Five"></option>
+                </datalist>           
+            </tr>
+            <tr>
+                <td><label for="">Your message for me:</label></td>
+                <td><textarea name="message" id="" cols="30" rows="10"></textarea></td>   
+            </tr>
+            <tr>          
+                <td><input type="submit"></td>           
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>
